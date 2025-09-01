@@ -1,0 +1,878 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: #e7e7e7;
+    min-height: 100vh;
+    line-height: 1.5;
+    transition: ease 0.999s;
+}
+
+.btn-nav {
+    display: none;
+}
+
+body.light {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+body.light #h1-top {
+    color: #ffffff;
+}
+
+body.light .the-header-container {
+    background: linear-gradient(to right, rgb(192, 147, 90), #a97b4e);
+}
+
+body.light .layer-blur {
+    height: 0;
+    width: 30rem;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    box-shadow: 0 0 700px 19px rgb(0, 0, 0);
+    rotate: -30deg;
+}
+
+body.light .layer-blur2 {
+    height: 0;
+    width: 30rem;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    box-shadow: 0 0 700px 19px rgb(0, 0, 0);
+    rotate: -30deg;
+}
+
+
+
+
+.image-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+
+
+}
+
+.layer-blur {
+    height: 0;
+    width: 30rem;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    box-shadow: 0 0 700px 15px white;
+    rotate: -30deg;
+}
+
+.image-gradient2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.layer-blur2 {
+    height: 0;
+    width: 30rem;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    box-shadow: 0 0 700px 10px white;
+    rotate: -30deg;
+}
+
+.the-header {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+
+    padding: 1rem 5rem;
+}
+
+.the-nav {
+    display: flex;
+    gap: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 1.3rem;
+    transition: all 0.9s ease;
+    display: inline-block;
+}
+
+
+a:hover {
+    color: rgb(231, 159, 33);
+    transform: scale(1.1);
+    transition: ease 0.3s;
+}
+
+body.light a {
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 1.3rem;
+    transition: all 0.9s ease;
+
+}
+
+body.light a:hover {
+    color: rgb(255, 220, 187);
+    transition: ease 0.3s;
+    transform: scale(1.1);
+}
+
+#h1-top {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.btn-nav {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.btn-nav:hover {
+    background-color: rgb(163, 163, 163);
+}
+
+.btn-of-nav {
+    color: #000000
+}
+
+
+.intro {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10rem 3rem 0 3rem;
+    /* height:auto; */
+}
+
+.hero-content {
+
+    height: auto;
+}
+
+body.light #h1-mid {
+    color: rgb(97, 77, 42);
+}
+
+#h1-mid {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #ce9540;
+    text-align: center;
+    /* word-break: break-all; */
+}
+
+.highlight {
+    color: #ffffff;
+}
+
+body.light .hero-content {
+    background: linear-gradient(to right, rgb(192, 147, 90), #a97b4e);
+    height: auto;
+}
+
+.img-photo {
+    /* position: relative; */
+    /* top: -246px; */
+    /* left: 43px; */
+    height: 50rem;
+    width: auto;
+    padding: 6rem;
+    border: none;
+    border-radius: 50px;
+
+
+    /* overflow:hidden; */
+    /* align-self: center; */
+
+}
+
+.the-main2-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.p-1-mid {
+    font-size: 6rem;
+    margin: 2rem 6rem;
+    padding: 2rem 6rem;
+    border-radius: 50px;
+    background-color: rgb(53, 47, 38);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+body.light .p-1-mid {
+    font-size: 6rem;
+    margin: 2rem 6rem;
+    padding: 2rem 6rem;
+    border-radius: 50px;
+    /* background: linear-gradient(to right, rgba(232, 242, 245, 0.681), #aeb3b4b2); */
+    background: url("gradient.png") no-repeat center center/cover;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+
+}
+
+.p-div {
+    font-size: 1.5rem;
+
+    letter-spacing: 1px;
+
+
+}
+
+body.light .the-main3-container {
+    background-color: #f7f7f7;
+    height: 110vh;
+}
+
+.the-main3-container {
+    background-color: #000000;
+    height: 110vh;
+}
+
+.edu-heading {
+    font-size: 6rem;
+    font-weight: 800;
+    padding: 3rem 1rem;
+
+}
+
+
+.edu-img {
+    width: 100vw;
+    /* height:auto; */
+    height: 85vh;
+}
+
+.edu-img2 {
+    width: 100vw;
+    /* height:auto; */
+    height: 100vh;
+}
+
+
+body.light .edu-img2 {
+    display: none;
+}
+
+body.dark .edu-img {
+    display: none;
+}
+
+
+
+.the-skill-container {
+    /* background: linear-gradient(to right, rgb(192, 147, 90), #a97b4e); */
+
+    height: auto;
+}
+
+.skill-heading {
+    font-size: 6rem;
+    font-weight: 800;
+    padding: 1rem;
+    text-align: end;
+
+}
+
+.all-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 2rem;
+    align-items: center;
+
+    border: 0.3rem solid rgb(72, 160, 214);
+    /* Thick border */
+    border-radius: 2rem;
+    /* Rounded edges */
+    padding: 4rem;
+    /* Keep space inside the border */
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+/* Shared row for icons & texts */
+.skill-box {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+/* Text skill cards – now same size as icons */
+.skill {
+    width: 15.625rem;
+    /* same width as icons */
+    height: 15.625rem;
+    /* same height as icons */
+    background-color: #1c71a7;
+    border-radius: 12px;
+    color: #e7e7e7;
+    display: flex;
+    /* center text inside */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+/* Icons */
+.skill-img {
+    width: 15.625rem;
+    height: 15.625rem;
+    object-fit: contain;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.skill-img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Tablets */
+@media (max-width: 992px) {
+    .skill-heading {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .all-skills {
+        margin: 2rem;
+        padding: 2rem;
+    }
+
+    .skill,
+    .skill-img {
+        width: 12rem;
+        height: 12rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+    .skill-heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .skill,
+    .skill-img {
+        width: 9rem;
+        height: 9rem;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .the-skill-container {
+        /* background: linear-gradient(to right, rgb(192, 147, 90), #a97b4e); */
+
+        height: 70vh;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Containers */
+.the-hobbies-container {
+    padding: 5rem 2rem;
+    margin: 2rem auto;
+    /* border-radius: 2rem; */
+    background: linear-gradient(to right, rgba(232, 242, 245, 0.681), #aeb3b4b2);
+
+    color: #6e6b65;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Heading */
+.section-heading {
+    font-size: 6rem;
+    font-weight: 800;
+    padding: 1rem;
+    text-align: center;
+    color: #333333;
+}
+
+/* Horizontal line */
+.hobbies-hr {
+    width: 10%;
+    margin: 1rem auto 3rem auto;
+    border: 2px solid #bcd6eb;
+    border-radius: 1rem;
+}
+
+/* Hobbies Cards */
+.hobbies-cards {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    background-color: rgba(255, 255, 255, 0.379);
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    cursor: zoom-in;
+}
+
+.hobby-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+
+}
+
+/* Hobbies Icons */
+.hobby-icon {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+/* Hobbies Title */
+.hobby-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer (bigger & bold) */
+.the-footer {
+    background: linear-gradient(to right, #000000e6, #101010e5);
+
+    color: #e7e7e7;
+    padding: 5.5rem 2rem;
+    margin-top: 5rem;
+}
+
+.footer-container {
+    display: grid;
+    /* easier big layout */
+    grid-template-columns: 1.2fr 1fr 0.8fr;
+    gap: 3rem;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about h2,
+.footer-links h2 {
+    font-size: 2.2rem;
+    /* larger headings */
+    margin-bottom: 1rem;
+}
+
+.footer-about p {
+    font-size: 1.35rem;
+    /* bigger text */
+    line-height: 2.1rem;
+    color: #cfcfcf;
+    max-width: 48ch;
+}
+
+/* Social links */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #e7e7e7;
+    padding: 0.6rem 0.2rem;
+    border-radius: 10px;
+    transition: color 0.25s ease, background 0.25s ease, transform 0.2s ease;
+    outline: none;
+    flex-wrap: wrap;
+}
+
+.footer-link .icon {
+    width: 32px;
+    /* larger icons */
+    height: 32px;
+    fill: currentColor;
+}
+
+.footer-link:hover {
+    color: #ffcc66;
+    /* golden accent */
+    background: rgba(255, 204, 102, 0.08);
+    transform: translateY(-2px);
+}
+
+.footer-link:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255, 204, 102, 0.5);
+}
+
+/* Back to Top */
+.footer-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.btn-top {
+    background: #ffcc66;
+    color: #111;
+    font-size: 1.25rem;
+    padding: 1rem 1.6rem;
+    /* larger button */
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-top:hover {
+    transform: translateY(-2px);
+    background: #e6b84f;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.btn-top:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 204, 102, 0.55);
+}
+
+/* Bottom bar */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 3.5rem;
+    padding-top: 1.4rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #b9b9b9;
+}
+
+
+
+/* 768 */
+@media (min-width: 100px) and (max-width: 768px) {
+    .the-header {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h1-top {
+        text-align: start;
+
+    }
+
+    .nav-a {
+        font-weight: lighter;
+        font-size: 0.1rem;
+    }
+
+    .the-nav {
+        gap: 1rem;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-photo {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: auto;
+
+        padding: 0.9rem;
+
+
+
+    }
+
+    .the-main2-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    body.light .p-1-mid {
+        /* font-weight: lighter; */
+        font-size: 4rem;
+        margin: 1rem;
+        padding: 1rem;
+        text-align: center;
+
+    }
+
+    body.light .p-div {
+        font-weight: lighter;
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 1rem;
+
+    }
+
+    .the-education-container {
+        height: auto;
+    }
+
+    .edu-heading {
+        font-size: 3.5rem;
+    }
+
+    .edu-img,
+    .edu-img2 {
+        height: auto;
+        width: 100vw;
+    }
+
+    .the-skill-container {
+        height: auto;
+    }
+
+    .skill-heading {
+        font-size: 3.5rem;
+    }
+
+    .skill-box {
+
+        height: auto;
+        width: auto;
+
+
+    }
+
+    .skill-img {
+        height: auto;
+        width: 0vw;
+    }
+
+    .skill {
+        height: auto;
+        width: auto;
+        margin: 1rem 0;
+        padding: 0;
+        font-weight: lighter;
+
+
+
+    }
+
+    .all-skills {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .skill-box-for-small {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        /* margin: 0; */
+
+    }
+
+    .skill-img {
+        height: auto;
+        width: 8rem;
+
+    }
+
+    .skill-box-for-small {
+        height: auto;
+        width: 15rem;
+
+
+    }
+
+    .skill-images {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+
+    }
+
+    .section-heading {
+        font-size: 3.5rem;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .hero-content {
+        height: 120vh;
+    } */
+
+    body.light .hero-content {
+        height: 70vh;
+    }
+
+    .p-1-mid {
+        font-size: 2rem;
+
+
+    }
+
+    body.light .p-1-mid {
+        font-size: 3rem;
+
+
+    }
+
+    .gmail-wrap {
+        white-space: normal;
+        word-break: break-all;
+    }
+
+
+
+
+
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024) {
+
+    .all-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 2rem 2rem;
+        align-items: center;
+
+        border: 0.3rem solid rgb(72, 160, 214);
+        /* Thick border */
+        border-radius: 2rem;
+        /* Rounded edges */
+        padding: 4rem;
+        /* Keep space inside the border */
+        background: rgba(255, 255, 255, 0.1);
+
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 2000px) {
+    body.light .hero-content {
+        height: 60vh;
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    .the-main2-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+}
+
+@media (min-width: 1568px) and (max-width: 3000px) {
+
+
+    .the-main2-container {
+        display: flex;
+
+        flex-direction: row;
+        height: auto;
+        /* flex-wrap:wrap; */
+    }
+}
+
+@media (min-width: 413px) and (max-width: 1568px) {
+    .img-photo {
+        height: auto;
+        width: 70vw;
+        display: block;
+        margin: 0 auto;
+    }
+}
